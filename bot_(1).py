@@ -10,7 +10,6 @@ from pyowm import OWM
 
 cl = LINETCR.LINE()
 cl.login(qr=True)
-#cl.login(token)
 cl.loginResult()
 
 ki = kk = kc = cl
