@@ -9,8 +9,7 @@ from threading import Thread
 from pyowm import OWM
 
 cl = LINETCR.LINE()
-cl.login(token='EmyUyW76XBtAlmzRqUQ3.NjKdBlFpufzxyKY2MDeuOW.daaKguqtQafsoZaQduT6a8D4qSlkcpM1JFHDOUS3AzI=')
-#cl.login(qr=True)
+cl.login(qr=True)
 cl.loginResult()
 
 ki = kk = kc = cl
@@ -78,16 +77,16 @@ Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 Bots = [dmid,Amid,Bmid,Cmid]
-admin = ["u9c99036cb7cf505657624cb699d114a3"]
-staff = ["ube187443474747c3ec352e7efeb48c1b","ub95ceaf08031d4a7478016ac1ed1f3dd","ub95ceaf08031d4a7478016ac1ed1f3dd"]
-adminMID = "ube187443474747c3ec352e7efeb48c1b","ub95ceaf08031d4a7478016ac1ed1f3dd"
+admin = ["u0085b75fb3d15b36647a8a01101fe847"]
+staff = ["u0085b75fb3d15b36647a8a01101fe847"]
+adminMID = "u0085b75fb3d15b36647a8a01101fe847"
 wait = {
     'contact':True,
-    'autoJoin':True,
+    'autoJoin':False,
     'autoCancel':{"on":True,"members":1},
     'leaveRoom':True,
     'timeline':True,
-    'autoAdd':False,
+    'autoAdd':True,
     "lang":"JP",
     "comment":"👉by ⭐⭐TON⭐⭐👈\n\nhttp://line.me/ti/p/K_CcmJ9rX1",
     "commentOn":True,
