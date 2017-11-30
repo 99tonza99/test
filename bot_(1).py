@@ -13,23 +13,13 @@ cl.login(token='EmyUyW76XBtAlmzRqUQ3.NjKdBlFpufzxyKY2MDeuOW.daaKguqtQafsoZaQduT6
 #cl.login(qr=True)
 cl.loginResult()
 
-kk = LINETCR.LINE()
-kk.login(token='EniQcQjW0p9t8TcUSzl6.EEidG1hdSDw7fDrcAcTRbG.MokvaxPc6r8AMpENVGWDRXPcbADhFX9tSPRb1k/JxNI=')
-kk.loginResult()
-
-ki = LINETCR.LINE()
-ki.login(token='EnzyVoD2acqWvfjw8Al2.XUoAU8mnDLbsXspQOnlqaG.KUohOt22uZNMt02BInzx6heUue8mOJ8lIWp7CC6OIe0=')
-ki.loginResult()
-
-kc = LINETCR.LINE()
-kc.login(token='EnwujTkBBaYusC6UOoF8.ya4I8hluh4lwp6oVcW9e/a.0OtWumWFjmA5FFm3VOpsBGncoH5sQCK8JzRJRbcLsWc=')
-kc.loginResult()
+ki = kk = kc = cl
 
 print "Login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage =""" 􀜁􀅹Salute􏿿 | Keyboard Member | 􀜁􀅹Salute􏿿
+helpMessage =""" 👉by ⭐⭐TON⭐⭐👈
 
 [􀜁􀅹Salute􏿿] Hi  (yah begitulah)
 [􀜁􀅹Salute􏿿] Creator ( Creator / Admin )
@@ -80,8 +70,7 @@ helpMessage =""" 􀜁􀅹Salute􏿿 | Keyboard Member | 􀜁􀅹Salute􏿿
 [􀜁􀅹Salute􏿿] invite on/off
 [􀜁􀅹Salute􏿿] cancel on/off
 
-[􀜁􀅹Salute􏿿] Mulai -> Meratakan  [􀜁􀅹Salute􏿿]
-(protect) (protect) (protect)
+   👉by ⭐⭐TON⭐⭐👈\n\nhttp://line.me/ti/p/K_CcmJ9rX1
 """
 KAC=[cl,ki,kk,kc]
 dmid = cl.getProfile().mid
@@ -100,7 +89,7 @@ wait = {
     'timeline':True,
     'autoAdd':False,
     "lang":"JP",
-    "comment":"Like Back",
+    "comment":"👉by ⭐⭐TON⭐⭐👈\n\nhttp://line.me/ti/p/K_CcmJ9rX1",
     "commentOn":True,
     "commentBlack":{},
     "wblack":False,
@@ -504,7 +493,7 @@ def bot(op):
             if msg.contentType == 16:
                 url = msg.contentMetadata("line://home/post?userMid="+mid+"&postId="+"new_post")
                 cl.like(url[25:58], url[66:], likeType=1001)
-        if op.type == 26:
+        if op.type == 25:
             msg = op.message
             if msg.contentType == 0:
                     if msg.to in wait2['readPoint']:
